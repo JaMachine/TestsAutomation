@@ -5,16 +5,12 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
-
-import java.util.concurrent.TimeUnit;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Base {
 
     static WebDriver d;
-
 
     @BeforeClass
     public static void setUp() {
@@ -25,10 +21,10 @@ public class Base {
         d.findElement(By.xpath("//div/nav/div[1]/a")).click();
     }
 
-//    @AfterClass
-//    public static void tearDown() {
-//        d.close();
-//    }
+    @AfterClass
+    public static void tearDown() {
+        d.close();
+    }
 
 
 }
