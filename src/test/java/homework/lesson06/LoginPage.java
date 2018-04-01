@@ -9,6 +9,11 @@ public class LoginPage extends Base {
     @FindBy(xpath = "//*[@id=\"email\"]")
     private WebElement fLog;
 
+
+
+
+
+
     @FindBy(xpath = "//*[@id=\"passwd\"]")
     private WebElement fPas;
 
@@ -32,6 +37,7 @@ public class LoginPage extends Base {
         fPas.click();
         fPas.sendKeys(password);
     }
+
 
     public AccountPage clickSignInBtn() {
         bLog.click();

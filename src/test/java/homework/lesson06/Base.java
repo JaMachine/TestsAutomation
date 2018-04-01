@@ -14,8 +14,8 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class Base {
 
     static WebDriver d;
-    String pLogin;
-    String pAccount = "MY ACCOUNT";
+
+
 
 
     @BeforeClass

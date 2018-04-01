@@ -21,6 +21,7 @@ public class Tests extends Base {
 //        Assert.assertThat();
 //        (new WebDriverWait(d, 10))
 //                .until(textToBePresentInElement(d.findElement(By.xpath("//*[@id=\"center_column\"]/h1")), pAccount));
+
     }
 
     @Ignore
