@@ -16,8 +16,6 @@ public class Base {
     static WebDriver d;
 
 
-
-
     @BeforeClass
     public static void setUp() {
         d = new ChromeDriver();

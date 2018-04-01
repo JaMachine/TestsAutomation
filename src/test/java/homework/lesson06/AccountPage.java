@@ -13,6 +13,7 @@ public class AccountPage extends Base{
     private WebElement bLogOut;
 
     public LoginPage signOut() {
+
         bLogOut.click();
         return PageFactory.initElements(d, LoginPage.class);
     }

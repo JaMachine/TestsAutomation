@@ -36,6 +36,9 @@ public class Tests extends Base {
     @Test
     public void t3_logOut() {
 
+
+
+
         pageLog = pageAcc.signOut();
     }
 
