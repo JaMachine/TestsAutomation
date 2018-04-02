@@ -33,9 +33,8 @@ public class LoginPage extends Base {
         fPas.sendKeys(password);
     }
 
-    public AccountPage clickSignInBtn() {
+    public void clickSignInBtn() {
         bLog.click();
-        return PageFactory.initElements(d, AccountPage.class);
     }
 
 
