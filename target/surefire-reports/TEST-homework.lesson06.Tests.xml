@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="homework.lesson05.LoginTest" time="9.282" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="homework.lesson06.Tests" time="6.871" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.1+11"/>
@@ -16,7 +16,7 @@
     <property name="user.script" value=""/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="test" value="LoginTest"/>
+    <property name="test" value="Tests"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\yuriy.zatonskiy\IdeaProjects\A_T_T_M\AutoTesting"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
@@ -48,7 +48,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=LoginTest test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=Tests test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-9.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -67,10 +67,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="homework.lesson05.LoginTest" name="test01_Login" time="3.156"/>
-  <testcase classname="homework.lesson05.LoginTest" name="test02_openMyOrders" time="1.654"/>
-  <testcase classname="homework.lesson05.LoginTest" name="test03_openOrderSlip" time="0.708"/>
-  <testcase classname="homework.lesson05.LoginTest" name="test04_openAddresses" time="0.717"/>
-  <testcase classname="homework.lesson05.LoginTest" name="test05_openPersonalInfo" time="0.856"/>
-  <testcase classname="homework.lesson05.LoginTest" name="test06_openWishlist" time="2.191"/>
+  <testcase classname="homework.lesson06.Tests" name="t1_mainLogin" time="2.722"/>
+  <testcase classname="homework.lesson06.Tests" name="t2_chainLogin" time="2.722">
+    <skipped/>
+  </testcase>
+  <testcase classname="homework.lesson06.Tests" name="t3_logOut" time="1.427"/>
 </testsuite>

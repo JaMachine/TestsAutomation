@@ -1,6 +1,7 @@
 package homework.lesson05;
 
 
+import homework.lesson06.LoginPage;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -11,6 +12,8 @@ import static org.hamcrest.core.StringContains.containsString;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LoginTest extends Base {
+
+
 
     @Test
     public void test01_Login() {

@@ -6,6 +6,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends Base {
 
+    LoginPage() {
+        PageFactory.initElements(d, this);
+    }
+
     @FindBy(xpath = "//*[@id=\"email\"]")
     private WebElement fLog;
 
@@ -20,7 +24,7 @@ public class LoginPage extends Base {
         enterUsername(username);
         enterPassword(password);
         clickSignInBtn();
-        return PageFactory.initElements(d, AccountPage.class);
+        return new AccountPage();
     }
 
     public void enterUsername(String username) {

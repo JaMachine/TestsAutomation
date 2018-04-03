@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.hamcrest.core.StringContains.containsString;
 
@@ -15,8 +16,8 @@ import static org.hamcrest.core.StringContains.containsString;
 public class Tests extends Base {
     private String log = "e2341745@nwytg.com";
     private String pas = "qwerty";
-    LoginPage pageLogin = PageFactory.initElements(d, LoginPage.class);
-    AccountPage pageAccount = PageFactory.initElements(d, AccountPage.class);
+    LoginPage pageLogin = new LoginPage();
+    AccountPage pageAccount = new AccountPage();
 
     @Test
     public void t1_mainLogin() {
