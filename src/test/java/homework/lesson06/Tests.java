@@ -22,7 +22,7 @@ public class Tests extends Base {
 
         pageAccount = pageLogin.logIn(log, pas);
 
-        Assert.assertThat(d.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
     }
 
@@ -34,7 +34,7 @@ public class Tests extends Base {
         pageLogin.enterPassword(pas);
         pageLogin.clickSignInBtn();
 
-        Assert.assertThat(d.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
     }
 
@@ -43,7 +43,7 @@ public class Tests extends Base {
 
         pageLogin = pageAccount.signOut();
 
-        Assert.assertThat(d.findElement(By.xpath("//*[@id=\"create-account_form\"]/h3")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"create-account_form\"]/h3")).getText(),
                 containsString("CREATE AN ACCOUNT"));
     }
 

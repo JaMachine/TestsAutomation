@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends Base {
 
     LoginPage() {
-        PageFactory.initElements(d, this);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//*[@id=\"email\"]")

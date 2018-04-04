@@ -10,20 +10,20 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Base {
 
-    static WebDriver d;
+    static WebDriver driver;
 
     @BeforeClass
     public static void setUp() {
-        d = new ChromeDriver();
-        d.manage().timeouts().implicitlyWait(10, SECONDS);
-        d.get("http://automationpractice.com/index.php");
-        d.manage().window().maximize();
-        d.findElement(By.xpath("//div/nav/div[1]/a")).click();
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, SECONDS);
+        driver.get("http://automationpractice.com/index.php");
+        driver.manage().window().maximize();
+        driver.findElement(By.xpath("//div/nav/div[1]/a")).click();
     }
 
     @AfterClass
     public static void tearDown() {
-        d.close();
+        driver.close();
     }
 
 
