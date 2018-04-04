@@ -17,8 +17,9 @@ public class Tests extends Base {
     LoginPage pageLogin = new LoginPage();
     AccountPage pageAccount = new AccountPage();
 
+    @Ignore
     @Test
-    public void t1_mainLogin() {
+    public void t1_baseLogin() {
 
         pageAccount = pageLogin.logIn(log, pas);
 
@@ -26,13 +27,10 @@ public class Tests extends Base {
                 containsString("Sign out"));
     }
 
-    @Ignore
     @Test
     public void t2_chainLogin() {
 
-        pageLogin.enterUsername(log);
-        pageLogin.enterPassword(pas);
-        pageLogin.clickSignInBtn();
+        pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));

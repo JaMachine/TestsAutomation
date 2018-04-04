@@ -27,19 +27,23 @@ public class LoginPage extends Base {
         return new AccountPage();
     }
 
-    public void enterUsername(String username) {
+    public LoginPage enterUsername(String username) {
         fLog.click();
         fLog.sendKeys(username);
+        return new LoginPage();
     }
 
-    public void enterPassword(String password) {
+    public LoginPage enterPassword(String password) {
         fPas.click();
         fPas.sendKeys(password);
+        return new LoginPage();
     }
 
-    public void clickSignInBtn() {
+    public LoginPage clickSignInBtn() {
         bLog.click();
+        return new LoginPage();
     }
+
 
 
 }
