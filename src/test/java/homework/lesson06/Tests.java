@@ -24,7 +24,7 @@ public class Tests extends Base {
 
         pageAccount = pageLogin.logIn(log, pas);
 
-        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
     }
 
@@ -33,7 +33,7 @@ public class Tests extends Base {
 
         pageAccount =pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn();
 
-        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
     }
 
