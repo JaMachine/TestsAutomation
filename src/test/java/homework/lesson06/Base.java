@@ -23,7 +23,7 @@ public class Base {
 
     @AfterClass
     public static void tearDown() {
-        driver.close();
+//        driver.close();
     }
 
 

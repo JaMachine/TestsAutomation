@@ -12,6 +12,7 @@ import static org.hamcrest.core.StringContains.containsString;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Tests extends Base {
+
     private String log = "e2341745@nwytg.com";
     private String pas = "qwerty";
     LoginPage pageLogin = new LoginPage();
@@ -30,7 +31,7 @@ public class Tests extends Base {
     @Test
     public void t2_chainLogin() {
 
-        pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn();
+        pageAccount =pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));

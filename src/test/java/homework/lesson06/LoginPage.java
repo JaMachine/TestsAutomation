@@ -30,18 +30,18 @@ public class LoginPage extends Base {
     public LoginPage enterUsername(String username) {
         fLog.click();
         fLog.sendKeys(username);
-        return new LoginPage();
+        return this;
     }
 
     public LoginPage enterPassword(String password) {
         fPas.click();
         fPas.sendKeys(password);
-        return new LoginPage();
+        return this;
     }
 
-    public LoginPage clickSignInBtn() {
+    public AccountPage clickSignInBtn() {
         bLog.click();
-        return new LoginPage();
+        return new AccountPage();
     }
 
 
