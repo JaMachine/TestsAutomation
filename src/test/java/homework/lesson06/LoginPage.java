@@ -1,14 +1,15 @@
 package homework.lesson06;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import static homework.lesson06.Base.driver;
+
 
 public class LoginPage {
 
 
-    LoginPage() {
+    LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
@@ -22,11 +23,11 @@ public class LoginPage {
     private WebElement bLog;
 
 
-    public AccountPage logIn(String username, String password) {
+    public AccountPage logIn(String username, String password, WebDriver driver) {
         enterUsername(username);
         enterPassword(password);
-        clickSignInBtn();
-        return new AccountPage();
+        clickSignInBtn(driver);
+        return new AccountPage(driver);
     }
 
     public LoginPage enterUsername(String username) {
@@ -41,9 +42,9 @@ public class LoginPage {
         return this;
     }
 
-    public AccountPage clickSignInBtn() {
+    public AccountPage clickSignInBtn(WebDriver driver) {
         bLog.click();
-        return new AccountPage();
+        return new AccountPage(driver);
     }
 
 

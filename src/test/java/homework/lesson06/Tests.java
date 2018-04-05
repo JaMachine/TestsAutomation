@@ -16,14 +16,14 @@ public class Tests extends Base {
 
     private String log = "e2341745@nwytg.com";
     private String pas = "qwerty";
-    LoginPage pageLogin = new LoginPage();
-    AccountPage pageAccount = new AccountPage();
+    LoginPage pageLogin = new LoginPage(driver);
+    AccountPage pageAccount = new AccountPage(driver);
 
     @Ignore
     @Test
     public void t1_baseLogin() {
 
-        pageAccount = pageLogin.logIn(log, pas);
+        pageAccount = pageLogin.logIn(log, pas, driver);
 
         Assert.assertThat(driver.findElement(By.xpath("//div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
@@ -32,7 +32,7 @@ public class Tests extends Base {
     @Test
     public void t2_chainLogin() {
 
-        pageAccount =pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn();
+        pageAccount = pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn(driver);
 
         Assert.assertThat(driver.findElement(By.xpath("//div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));
@@ -41,7 +41,7 @@ public class Tests extends Base {
     @Test
     public void t3_logOut() {
 
-        pageLogin = pageAccount.signOut();
+        pageLogin = pageAccount.signOut(driver);
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"create-account_form\"]/h3")).getText(),
                 containsString("CREATE AN ACCOUNT"));

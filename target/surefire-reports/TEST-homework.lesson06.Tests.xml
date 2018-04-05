@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="homework.lesson06.Tests" time="6.871" errors="0" skipped="1">
+<testsuite tests="3" failures="0" name="homework.lesson06.Tests" time="14.37" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.1+11"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin"/>
     <property name="user.country.format" value="UA"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yuriy.zatonskiy\IdeaProjects\A_T_T_M\AutoTesting"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\yuriy.zatonskiy\IdeaProjects\AT2\TestsAutomation"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="test" value="Tests"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\yuriy.zatonskiy\IdeaProjects\A_T_T_M\AutoTesting"/>
+    <property name="user.dir" value="C:\Users\yuriy.zatonskiy\IdeaProjects\AT2\TestsAutomation"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="9.0.1+11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -67,9 +67,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="homework.lesson06.Tests" name="t1_mainLogin" time="2.722"/>
-  <testcase classname="homework.lesson06.Tests" name="t2_chainLogin" time="2.722">
+  <testcase classname="homework.lesson06.Tests" name="t1_baseLogin" time="10.944">
     <skipped/>
+    <system-err>Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 2397
+Only local connections are allowed.
+квіт. 05, 2018 11:09:50 ДП org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</system-err>
   </testcase>
-  <testcase classname="homework.lesson06.Tests" name="t3_logOut" time="1.427"/>
+  <testcase classname="homework.lesson06.Tests" name="t2_chainLogin" time="1.859"/>
+  <testcase classname="homework.lesson06.Tests" name="t3_logOut" time="1.567"/>
 </testsuite>
