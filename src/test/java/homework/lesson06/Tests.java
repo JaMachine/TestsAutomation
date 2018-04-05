@@ -13,6 +13,7 @@ import static org.hamcrest.core.StringContains.containsString;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Tests extends Base {
 
+
     private String log = "e2341745@nwytg.com";
     private String pas = "qwerty";
     LoginPage pageLogin = new LoginPage();

@@ -3,8 +3,10 @@ package homework.lesson06;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static homework.lesson06.Base.driver;
 
-public class LoginPage extends Base {
+public class LoginPage {
+
 
     LoginPage() {
         PageFactory.initElements(driver, this);
@@ -43,7 +45,6 @@ public class LoginPage extends Base {
         bLog.click();
         return new AccountPage();
     }
-
 
 
 }

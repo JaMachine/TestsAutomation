@@ -3,8 +3,9 @@ package homework.lesson06;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static homework.lesson06.Base.driver;
 
-public class AccountPage extends Base {
+public class AccountPage {
 
     AccountPage() {
         PageFactory.initElements(driver, this);
