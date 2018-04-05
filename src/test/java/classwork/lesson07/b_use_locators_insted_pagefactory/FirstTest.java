@@ -21,7 +21,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentI
 
 
 @RunWith(JUnit4.class)
-public class FirstTest {
+public class    FirstTest {
 
     static WebDriver driver;
 
