@@ -18,12 +18,11 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(10, SECONDS);
         driver.get("http://automationpractice.com/index.php");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//div/nav/div[1]/a")).click();
     }
 
     @AfterClass
     public static void tearDown() {
-        driver.close();
+//        driver.close();
     }
 }
 
