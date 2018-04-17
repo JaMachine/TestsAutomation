@@ -1,4 +1,4 @@
-package classwork.lesson08;
+package classwork.lesson08.a_custom_condition;
 
 
 import org.junit.AfterClass;

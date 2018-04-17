@@ -1,4 +1,4 @@
-package classwork.lesson08;
+package classwork.lesson08.b_using_logger;
 
 
 import org.openqa.selenium.WebDriver;

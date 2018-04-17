@@ -6,12 +6,16 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static org.hamcrest.core.StringContains.containsString;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class Tests extends Base {
+
+    private static final Logger LOG = LogManager.getLogger(Tests.class);
 
 
     private String log = "e2341745@nwytg.com";
@@ -33,7 +37,9 @@ public class Tests extends Base {
     @Test
     public void t2_chainLogin() {
 
+        LOG.info("t2_chainLogin START");
         pageAccount = pageLogin.enterUsername(log).enterPassword(pas).clickSignInBtn(driver);
+        LOG.info("t2_chainLogin FINISH");
 
         Assert.assertThat(driver.findElement(By.xpath("//div/nav/div[2]/a")).getText(),
                 containsString("Sign out"));

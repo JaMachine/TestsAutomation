@@ -1,0 +1,5 @@
+[INFO ] | 2018-04-09 00:24:51 | (FirstTest.java             :25 ) - Visit main page.
+[INFO ] | 2018-04-09 00:24:56 | (FirstTest.java             :33 ) - Entering first query.
+[DEBUG] | 2018-04-09 00:24:56 | (FirstTest.java             :35 ) - Checking 1.
+[INFO ] | 2018-04-09 00:24:58 | (FirstTest.java             :38 ) - Entering second query.
+[DEBUG] | 2018-04-09 00:24:58 | (FirstTest.java             :40 ) - Checking 2.

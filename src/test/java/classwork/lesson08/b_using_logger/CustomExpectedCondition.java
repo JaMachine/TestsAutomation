@@ -1,4 +1,5 @@
-package classwork.lesson08;
+package classwork.lesson08.b_using_logger;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import java.util.List;
 public class CustomExpectedCondition {
 
     public static ExpectedCondition<List<WebElement>> listShouldHaveSize(By locator, int expSize){
+
         return new ExpectedCondition<List<WebElement>>() {
             @Override
             public List<WebElement> apply(WebDriver driver) {
